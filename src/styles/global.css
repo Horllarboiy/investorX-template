@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.fadeInFromRight {
+    border-bottom: 2px ;
+    animation: fadeInFromRight 0.7s ease-out;
+}
+
+@keyframes fadeInFromRight {
+    0% {
+        width: 0;
+    }
+
+    40% {
+        width: 40%;
+    }
+
+    70% {
+        width: 70%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

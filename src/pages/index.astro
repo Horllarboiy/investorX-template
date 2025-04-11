@@ -2,8 +2,8 @@
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import ScrollDown from "../assets/scrollDown.svg";
-import BusinessIcon from "../assets/business.svg";
 import { FiArrowUpRight } from "react-icons/fi";
+import Portfolio from "../components/Portfolio.astro";
 import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -15,17 +15,17 @@ import "../styles/global.css";
     <Header />
   </header>
   <div
-    class="w-40 md:w-56 lg:w-60 absolute z-50 -bottom-36 md:-bottom-52 right-5 md:right-20"
+    class="w-40 md:w-56 lg:w-60 absolute z-50 -bottom-24 md:-bottom-48 right-5 md:right-20"
   >
     <ScrollDown />
   </div>
   <section
-    class="min-h-screen bg-gray-100 pt-48 pb-20 grid grid-cols-1 md:grid-cols-2 md:gap-20 px-5 md:px-14"
+    class="min-h-screen bg-gray-100 pt-32 md:pt-48 pb-20 grid grid-cols-1 md:grid-cols-2 md:gap-20 px-5 md:px-14"
   >
     <div class="flex flex-col">
       <i class="h-1 w-40 bg-blue-500"></i>
       <h1 class="md:text-6xl md:w-4/5 text-4xl leading-16 md:leading-20 mt-5">
-        About our investment firm
+        About our <br class="md:hidden"> investment firm
       </h1>
     </div>
     <div>
@@ -44,36 +44,7 @@ import "../styles/global.css";
       </button>
     </div>
   </section>
-  <section class="min-h-screen pt-48 px-5 md:px-14">
-    <div class="flex flex-col">
-      <i class="h-1 w-40 bg-blue-500"></i>
-      <h1
-        class="flex flex-col md:flex-row justify-between items-start leading-16 md:leading-20 mt-5"
-      >
-        <span class="md:text-5xl text-4xl"> Portfolio</span>
-        <span class="text-xl md:w-7/12 mt-5 md:mt-0 font-light"
-          >Lorem ipsum dolor sit amet consectetur adipiscing elit dolo elementum
-          sed massa at nullam purus integer maece.</span
-        >
-      </h1>
-      <div class="mt-20">
-        <div class="flex md:flex-row flex-col-reverse md:justify-between md:items-center">
-          <div class="flex items-center">
-            <i class="inline-flex w-14 md:w-fit">
-              <BusinessIcon />
-            </i>
-            <h2 class="flex flex-col ml-5">
-              <span>Search Engine</span>
-              <span class="text-4xl my-2">Business</span>
-            </h2>
-          </div>
-          <p class="md:w-2/5 text-base">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit dolo
-            elementum sed massa at
-          </p>
-          <p>2022</p>
-        </div>
-      </div>
-    </div>
+  <section class="min-h-screen pt-32 md:pt-48 px-5 md:px-14">
+    <Portfolio />
   </section>
 </Layout>

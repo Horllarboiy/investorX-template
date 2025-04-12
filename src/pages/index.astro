@@ -4,7 +4,9 @@ import Layout from "../layouts/Layout.astro";
 import ScrollDown from "../assets/scrollDown.svg";
 import { FiArrowUpRight } from "react-icons/fi";
 import Portfolio from "../components/Portfolio.astro";
+import Approach from "../components/Approach.astro";
 import "../styles/global.css";
+import "animate.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -24,8 +26,10 @@ import "../styles/global.css";
   >
     <div class="flex flex-col">
       <i class="h-1 w-40 bg-blue-500"></i>
-      <h1 class="md:text-6xl md:w-4/5 text-4xl leading-16 md:leading-20 mt-5">
-        About our <br class="md:hidden"> investment firm
+      <h1
+        class="md:text-6xl md:w-4/5 text-4xl leading-16 md:leading-20 mt-5"
+      >
+        About our <br class="md:hidden" /> investment firm
       </h1>
     </div>
     <div>
@@ -46,5 +50,44 @@ import "../styles/global.css";
   </section>
   <section class="min-h-screen pt-32 md:pt-48 px-5 md:px-14">
     <Portfolio />
+  </section>
+  <section class="min-h-screen bg-gray-100 pt-28 md:pt-40 px-5 md:px-14">
+    <Approach />
+  </section>
+  <section
+    class="min-h-4/5 bg-black flex justify-center flex-col text-white pt-10 px-5 md:px-14"
+  >
+    <i class="h-1 w-36 bg-blue-500"></i>
+    <h1
+      class="flex flex-col md:flex-row justify-between items-start leading-16 md:leading-20 pt-7"
+    >
+      <span class="md:text-5xl text-4xl"> Portfolio</span>
+      <span class="text-xl md:w-7/12 mt-5 md:mt-0 font-light"
+        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed
+        cupiditate debitis veniam, tempore tenetur facilis vel ipsam delectus
+        modi alias a nostrum expedita quae nemo deserunt blanditiis doloribus!
+        Sapiente.</span
+      >
+    </h1>
+    <ul
+      class="grid lg:grid-cols-4 grid-cols-2 place-content-center gap-7 mt-16 text-5xl md:text-7xl"
+    >
+      <li class="flex flex-col items-center md:items-start">
+        <span>70+</span>
+        <span class="text-base md:text-xl">Companies</span>
+      </li>
+      <li class="flex flex-col items-center md:items-start">
+        <span>2B+</span>
+        <span class="text-base md:text-xl">Invested capital</span>
+      </li>
+      <li class="flex flex-col items-center md:items-start">
+        <span>30+</span>
+        <span class="text-base md:text-xl">Partners</span>
+      </li>
+      <li class="flex flex-col items-center md:items-start">
+        <span>10+</span>
+        <span class="text-base md:text-xl">Years of experiences</span>
+      </li>
+    </ul>
   </section>
 </Layout>

@@ -1,6 +1,6 @@
 ---
 import { FiArrowUpRight } from "react-icons/fi";
-import Nav from "../components/Nav.astro";
+import Nav from "./Nav";
 import AnimatedBox from "./AnimatedBox";
 ---
 
@@ -8,9 +8,9 @@ import AnimatedBox from "./AnimatedBox";
   style="background: #0E141C;"
   class="text-white bg-blue-950 px-5 md:px-14 min-h-screen"
 >
-  <Nav />
+  <Nav client:load />
   <AnimatedBox client:load>
-    <div class="lg:w-4/5 flex justify-center mt-9 md:mt-32 flex-col">
+    <div class="lg:w-4/5 flex justify-center mt-12 md:mt-32 flex-col">
       <h1 class="md:text-7xl text-4xl">
         <span> We invest in the companies of tomorrow, today</span>
         <span class="inline-flex h-0.5 md:h-1 w-36 md:w-48 bg-white"></span>
@@ -31,7 +31,7 @@ import AnimatedBox from "./AnimatedBox";
           <span class="text-3xl"> <FiArrowUpRight /> </span>
         </button>
         <button
-          class="md:ml-10 w-fit mt-14 md:mt-0 flex items-center border-b-2 hover:border-b-0 transition-all duration-75 ease-linear leading-14"
+          class="md:ml-10 w-fit mt-12 md:mt-0 flex items-center border-b-2 hover:border-b-0 transition-all duration-75 ease-linear leading-14"
         >
           <span>Investment portfolio</span>
           <span class="text-3xl"> <FiArrowUpRight /> </span>

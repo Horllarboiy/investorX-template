@@ -1,8 +1,7 @@
 ---
-import astroLogo from "../assets/astro.svg";
-import background from "../assets/background.svg";
 import { FiArrowUpRight } from "react-icons/fi";
 import Nav from "../components/Nav.astro";
+import AnimatedBox from "./AnimatedBox";
 ---
 
 <div
@@ -10,30 +9,34 @@ import Nav from "../components/Nav.astro";
   class="text-white bg-blue-950 px-5 md:px-14 min-h-screen"
 >
   <Nav />
-  <div class="lg:w-4/5 flex justify-center mt-9 md:mt-32 flex-col">
-    <h1 class="md:text-7xl text-4xl">
-      <span> We invest in the companies of tomorrow, today</span>
-      <span class="inline-flex h-0.5 md:h-1 w-36 md:w-48 bg-white"></span>
-    </h1>
-    <p class="md:my-5 my-7 text-xl md:text-2xl md:w-4/5 lg:w-4/6 tracking-wide">
-      Lorem ipsum dolor sit amet consectetur adipiscing elit nunc ante ut at non
-      arcu molestie ipsum in metus ridiculus.
-    </p>
-    <div
-      class="flex flex-col md:flex-row py-7 md:mt-5 md:pb-14 text-2xl font-bold"
-    >
-      <button
-        class="flex items-center w-fit border-b-2 hover:border-b-0 transition-all duration-75 ease-linear leading-14"
+  <AnimatedBox client:load>
+    <div class="lg:w-4/5 flex justify-center mt-9 md:mt-32 flex-col">
+      <h1 class="md:text-7xl text-4xl">
+        <span> We invest in the companies of tomorrow, today</span>
+        <span class="inline-flex h-0.5 md:h-1 w-36 md:w-48 bg-white"></span>
+      </h1>
+      <p
+        class="md:my-5 my-7 text-xl md:text-2xl md:w-4/5 lg:w-4/6 tracking-wide"
       >
-        <span>Get in touch</span>
-        <span class="text-3xl"> <FiArrowUpRight /> </span>
-      </button>
-      <button
-        class="md:ml-10 w-fit mt-14 md:mt-0 flex items-center border-b-2 hover:border-b-0 transition-all duration-75 ease-linear leading-14"
+        Lorem ipsum dolor sit amet consectetur adipiscing elit nunc ante ut at
+        non arcu molestie ipsum in metus ridiculus.
+      </p>
+      <div
+        class="flex flex-col md:flex-row py-7 md:mt-5 md:pb-14 text-2xl font-bold"
       >
-        <span>Investment portfolio</span>
-        <span class="text-3xl"> <FiArrowUpRight /> </span>
-      </button>
+        <button
+          class="flex items-center w-fit border-b-2 hover:border-b-0 transition-all duration-75 ease-linear leading-14"
+        >
+          <span>Get in touch</span>
+          <span class="text-3xl"> <FiArrowUpRight /> </span>
+        </button>
+        <button
+          class="md:ml-10 w-fit mt-14 md:mt-0 flex items-center border-b-2 hover:border-b-0 transition-all duration-75 ease-linear leading-14"
+        >
+          <span>Investment portfolio</span>
+          <span class="text-3xl"> <FiArrowUpRight /> </span>
+        </button>
+      </div>
     </div>
-  </div>
+  </AnimatedBox>
 </div>

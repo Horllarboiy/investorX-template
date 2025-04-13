@@ -1,0 +1,58 @@
+---
+import Mobile from "../assets/mobile.svg";
+import Computer from "../assets/computer.svg";
+import Software from "../assets/software.svg";
+import AnimatedBox from "./AnimatedBox";
+---
+
+<div class="flex flex-col pb-20">
+  <div class="flex flex-col md:flex-row justify-center items-start">
+    <div class="md:w-3/6">
+      <i class="h-1 block mb-4 w-40 bg-blue-500"></i>
+      <h1
+        class="flex flex-col justify-between items-start leading-16 md:leading-20 mt-5"
+      >
+        <span class="md:text-7xl md:leading-24 leading-14 text-4xl text-black">
+          Industries we <br /> invest in</span
+        >
+        <span class="text-xl text-gray-600 md:w-10/12 mt-5 md:mt-7 font-light"
+          >Lorem ipsum dolor sit amet consectetur adipiscing elit dolor ipsum
+          scelerisque quis tellus suscipit sit consectetur imperdiet facilisis.</span
+        >
+      </h1>
+    </div>
+    <div class="md:flex-2/4 mt-14 md:mt-0 font-medium">
+      <div class="">
+        <AnimatedBox client:load>
+          <i> <Mobile /> </i>
+          <h2 class="text-2xl my-4">Mobile & Tablet Apps</h2>
+          <p class="text-[20px] text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit dolor ipsum
+            scelerisque quis tellus suscipit sit consectetur
+          </p>
+          <hr class="mt-14 text-gray-300" />
+        </AnimatedBox>
+      </div>
+      <div class="md:my-20 my-12">
+        <AnimatedBox client:load>
+          <i> <Computer /> </i>
+          <h2 class="text-2xl my-4">Mobile & Tablet Apps</h2>
+          <p class="text-[20px] text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit dolor ipsum
+            scelerisque quis tellus suscipit sit consectetur
+          </p>
+          <hr class="mt-14 text-gray-300" />
+        </AnimatedBox>
+      </div>
+      <AnimatedBox client:load>
+        <i class=""> <Software /> </i>
+        <h2 class="text-2xl my-4">Mobile & Tablet Apps</h2>
+        <p class="text-[20px] text-gray-600">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit dolor ipsum
+          scelerisque quis tellus suscipit sit consectetur
+        </p>
+        <hr class="mt-14 text-gray-300" />
+      </AnimatedBox>
+    </div>
+  </div>
+</div>

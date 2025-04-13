@@ -1,0 +1,56 @@
+---
+import AnimatedBox from "./AnimatedBox";
+import { FiArrowUpRight } from "react-icons/fi";
+---
+
+<div>
+  <div class="flex flex-col md:flex-row pb-28">
+    <div class="md:w-3/5">
+      <i class="h-1 block w-40 bg-blue-500"></i>
+      <h1 class="md:text-6xl text-4xl leading-16 md:leading-20 mt-5">
+        Articles & news
+      </h1>
+      <button
+        class="text-2xl w-fit mt-8 flex items-center border-b-2 hover:border-b-0 transition-all duration-75 ease-linear leading-14"
+      >
+        <span class="font-medium">Browse all articles</span>
+        <span class="text-3xl"> <FiArrowUpRight /> </span>
+      </button>
+    </div>
+    <article class="md:w-2/3 mt-20 md:mt-0">
+      <AnimatedBox client:load>
+        <div>
+          <h2 class="flex items-center text-neutral-500">
+            <span class="text-[18px] font-medium">Articles</span>
+            <span class="md:w-24 w-12 mx-5 md:mx-7 h-[2px] inline-flex bg-neutral-500"></span>
+            <span>October 13, 2021</span>
+          </h2>
+          <h1 class="md:text-[28px] text-[22px] my-4 font-medium">
+            How to raise capital: 5 fundraising strategies for your startup
+          </h1>
+          <p class="text-[18px] text-neutral-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+        <hr class="text-neutral-500 text-[2px] my-14" />
+      </AnimatedBox>
+      <AnimatedBox client:load>
+        <div class="md:mt-20 mt-8">
+          <h2 class="flex items-center text-neutral-500">
+            <span class="text-[18px] font-medium">Investments</span>
+            <span class="w-12 md:w-24 mx-5 md:mx-7 h-[2px] inline-flex bg-neutral-500"></span>
+            <span>October 13, 2021</span>
+          </h2>
+          <h1 class="text-[28px] my-4 font-medium">
+            We are leading Series A investment round for BRIX Templates
+          </h1>
+          <p class="text-[18px] text-neutral-500">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </AnimatedBox>
+    </article>
+  </div>
+</div>

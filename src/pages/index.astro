@@ -6,11 +6,10 @@ import { FiArrowUpRight } from "react-icons/fi";
 import Portfolio from "../components/Portfolio.astro";
 import Approach from "../components/Approach.astro";
 import AnimatedBox from "../components/AnimatedBox";
+import Industry from "../components/Industry.astro";
+import Partners from "../components/Partners.astro";
+import Articles from "../components/Articles.astro";
 import "../styles/global.css";
-import "animate.css";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
@@ -62,8 +61,8 @@ import "animate.css";
       <span class="md:text-5xl text-4xl"> Portfolio</span>
       <span class="text-xl md:w-7/12 mt-5 md:mt-0 font-light"
         >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed
-        cupiditate debitis veniam, modi alias a nostrum expedita quae nemo deserunt blanditiis doloribus!
-        Sapiente.</span
+        cupiditate debitis veniam, modi alias a nostrum expedita quae nemo
+        deserunt blanditiis doloribus! Sapiente.</span
       >
     </h1>
     <ul
@@ -86,5 +85,23 @@ import "animate.css";
         <span class="text-base md:text-xl">Years of experiences</span>
       </li>
     </ul>
+  </section>
+  <section class="min-h-screen pt-24 md:pt-40 px-5 md:px-14">
+    <Industry />
+  </section>
+  <section
+    class="min-h-screen text-white bg-[#0E141C] pt-24 md:pt-40 px-5 md:px-14"
+  >
+    <Partners />
+  </section>
+  <section
+    class="min-h-screen text-black bg-gray-100 pt-24 md:pt-40 px-5 md:px-14"
+  >
+    <Articles />
+  </section>
+   <section
+    class="min-h-screen text-white bg-[#0E141C] pt-24 md:pt-40 px-5 md:px-14"
+  >
+   
   </section>
 </Layout>

@@ -5,7 +5,7 @@ import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 
 const Nav = () => {
   const [menu, setMenu] = useState(false);
-   const [dropDown, setDropDown] = useState(false);
+  const [dropDown, setDropDown] = useState(false);
   const handleClick = () => {
     setMenu((prev) => !prev);
   };
@@ -46,63 +46,12 @@ const Nav = () => {
             </li>
             <li>
               <a
-                href="/about"
+                href="/"
                 className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:p-0"
               >
                 About
               </a>
             </li>
-            <li>
-              <button
-                onClick={handleDropDown}
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
-                className="flex items-center w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-              >
-                Pages
-                <span>
-                  {dropDown ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
-                </span>
-              </button>
-
-              <div
-                id="dropdownNavbar"
-                className={`z-40 md:absolute font-normal divide-y divide-gray-100 rounded-lg shadow-sm`}
-              >
-                <ul
-                  className={`py-2 text-sm ${
-                    dropDown ? `block` : `hidden`
-                  } text-gray-300 `}
-                  aria-labelledby="dropdownLargeButton"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Settings
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Earnings
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
             <li>
               <a
                 href="#"

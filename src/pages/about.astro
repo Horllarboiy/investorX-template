@@ -1,0 +1,36 @@
+---
+import Nav from "../components/Nav";
+import "../styles/global.css";
+import AnimatedBox from "../components/AnimatedBox";
+import { Image } from "astro:assets";
+import AboutImg from "../assets/aboutImg.png";
+---
+
+<div>
+  <header class="bg-[#0E141C] text-white pb-32 md:min-h-screen px-5 md:px-14">
+    <Nav client:load />
+    <AnimatedBox client:load>
+      <div class="md:w-2/4 relative">
+        <h1
+          class="flex flex-col md:flex-row md:text-[80px] text-4xl md:mt-28 mt-14"
+        >
+          <span class="">About us</span>
+          <span class="lg:w-60 w-40 h-1 inline-flex mt-4 lg:mt-0 bg-white"
+          ></span>
+        </h1>
+        <p class="text-[22px] mt-10 lg:mt-0">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit nunc ante ut at
+          non arcu molestie ipsum in metus ridiculus.
+        </p>
+      </div>
+    </AnimatedBox>
+      <Image
+        class="absolute w-[90%] -bottom-[4px] lg:-bottom-[85%] hover:scale-[101%] transition-all duration-200 ease-in-out"
+        src={AboutImg}
+        alt="partners"
+      />
+  </header>
+  <section class="min bg-gray-100 h-screen pt-24 md:pt-40 px-5 md:px-14">
+
+  </section>
+</div>
